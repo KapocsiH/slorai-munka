@@ -1,0 +1,34 @@
+body{
+    background-image: url(tanarurlikeoltaezt.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%
+}
+
+nav{
+    width: 100%;
+}
+
+nav h2{
+    margin-left: 10px;
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    list-style-type: none;
+    float: left;
+}
+
+nav ul li a{
+    font-size: 1rem;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
