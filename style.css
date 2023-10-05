@@ -1,10 +1,3 @@
-body{
-    background-image: url(tanarurlikeoltaezt.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%
-}
-
 nav{
     width: 100%;
 }
@@ -27,8 +20,30 @@ nav ul li{
 }
 
 nav ul li a{
-    font-size: 1rem;
     margin-right: 10px;
     text-decoration: none;
     color: white;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background: rgb(84,92,97);
+    background: radial-gradient(circle, rgba(84,92,97,1) 0%, rgba(23,41,48,1) 100%); 
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+  
+.card3d{
+    margin: 4px;
+    transform: scale(1);
+    perspective: 400px;
+}
+  
+.card3d:hover{
+    transform: scale(1.1);
+}
+  
+.card3d, .card3d img{
+    transition: all 250ms ease-out;
 }
