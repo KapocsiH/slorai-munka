@@ -1,0 +1,159 @@
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    animation: balint 5s infinite linear;
+}
+
+@keyframes balint{
+    50% {transform: rotate(360deg);}
+}
+
+h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    padding: 0;
+}
+
+ul li{
+    list-style-type: none;
+    text-align: center;
+    font-size: 2rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.4s;
+}
+
+ul li a:hover{
+    transition: 0.4s;
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px white;
+}
+
+/* alvas */
+
+.alvas{
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin-top: 150px;
+    background: rgba(0, 0, 0, 0);
+    transform: rotate(-30deg) skew(25deg) scale(0.8);
+    transition: 0.5s;
+}
+
+.alvas img{
+    position: absolute;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.alvas:hover img:nth-child(4){
+    transform: translate(160px, -160px);
+    opacity: 1;
+}
+
+.alvas:hover img:nth-child(3){
+    transform: translate(120px, -120px);
+    opacity: 0.8;
+}
+
+.alvas:hover img:nth-child(2){
+    transform: translate(80px, -80px);
+    opacity: 0.6;
+}
+
+.alvas:hover img:nth-child(1){
+    transform: translate(40px, -40px);
+    opacity: 0.4;
+}
+
+/* anglia */
+
+.anglia{
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin-top: 150px;
+}
+
+.anglia img{
+    position: absolute;
+    width: 100%;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.anglia:hover .overlay{
+    opacity: 1;
+    rotate: 3600deg;
+}
+
+.text {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 3px 3px 5px black;
+}
+
+/* cesarp */
+
+.cesarp{
+    position: relative;
+    width: 360px;
+    height: 640px;
+    margin-top: 150px;
+}
+
+.imagecesarp{
+    perspective: 3000px;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+}
+
+.imagecesarp img{
+    width: 200%;
+    height: 200%;
+    transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+    box-shadow: -80px 60px 15px 5px rgba(0,0,0,0.4);
+    transition: all .4s;
+    transform-style: preserve-3d;
+}
+
+.imagecesarp:hover img{
+    transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+}
